@@ -403,4 +403,15 @@ try:
     st.markdown(
         f"<img src='top.jpeg' class='header-image' alt='App Header Image'>",
         unsafe_allow_html=True
-   
+    )
+except:
+    pass
+
+if st.session_state.page == 'welcome':
+    show_welcome_screen()
+elif st.session_state.page == 'dashboard':
+    show_prediction_dashboard()
+elif st.session_state.page == 'results':
+    show_results_screen()
+else:
+    show_welcome_screen()
