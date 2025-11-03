@@ -370,7 +370,6 @@ def show_results_screen():
         )
 
     with price_cols[1]:
-        st.subheader("📈 12-Month Trend (Chart Removed)")
         st.info("Trend visualization is currently disabled. The system still computes detailed monthly forecasts internally.")
 
     st.markdown("---")
